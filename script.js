@@ -34,7 +34,10 @@ button.addEventListener('click', () => {
         alert('Please enter a number smaller than 100');
     } 
     else if (dimensions < 0) {
-        alert('Please enter a valid number');
+        alert('Please enter a valid integer');
+    }
+    else if (Number.isInteger(dimensions)) {
+        alert('Please enter a valid integer');
     }
     else {
         //Removes just rows to reduce runtime
