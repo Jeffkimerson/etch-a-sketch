@@ -1,3 +1,10 @@
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .square {
     height: 100px;
     width: 100px;
@@ -6,6 +13,13 @@
     border-color: black;
 }
 
-.row {
+.row,
+.button {
     display: flex;
+    justify-content: center;
+}
+
+button {
+    font-size: 36px;
+    margin: 20px 0px;
 }

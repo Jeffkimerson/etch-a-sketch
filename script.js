@@ -4,6 +4,9 @@ for (let i = 0; i <= 15; i++) {
     div.classList.add('row');
     for (let j = 0; j<= 15; j++) {
         const square = document.createElement('div');
+        square.addEventListener('mouseover', () => {
+            square.style.backgroundColor = 'red';
+        })
         square.classList.add('square');
         div.appendChild(square);
     }
