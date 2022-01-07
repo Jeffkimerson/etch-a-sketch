@@ -5,8 +5,8 @@ for (let i = 0; i <= 15; i++) {
     for (let j = 0; j<= 15; j++) {
         const square = document.createElement('div');
         square.addEventListener('mouseover', () => {
-            square.style.backgroundColor = 'red';
-        })
+            square.classList.add('hover');
+        });
         square.classList.add('square');
         div.appendChild(square);
     }
@@ -14,3 +14,12 @@ for (let i = 0; i <= 15; i++) {
     container.appendChild(div);
 
 }
+
+//Button to reset and create new grid
+const button = document.querySelector('button');
+button.addEventListener('click', () => {
+    const colored = document.querySelectorAll('.hover');
+    colored.forEach((div) => {
+        div.classList.remove('hover');
+    })
+})
